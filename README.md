@@ -9,20 +9,22 @@ XXPickerView 是 ActionSheet 样式的 UIPickerView.
 
 ##1.使用CocoaPods安装
 推荐使用这种安装方式。
-step1:添加下面一条语句到Podfile:
+
+###step1:添加下面一条语句到Podfile:
 
 ````
 pod 'XXPickerView','~> 1.0.0'
 ````
-step2:导入.h文件
+###step2:导入.h文件
 
 ````objc
 #import "XXPickerView.h"
 ````
 
 ##2.手动安装
-step1:直接下载XXPickerView文件夹，拖放到工程中。
-step2:导入.h文件
+###step1:直接下载XXPickerView文件夹，拖放到工程中。
+
+###step2:导入.h文件
 
 ````objc
 #import "XXPickerView.h"
