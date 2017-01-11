@@ -2,7 +2,9 @@
 # XXPickerView
 XXPickerView 是 ActionSheet 样式的 UIPickerView.
 
-![](demo.png)
+![](demo1.png)
+![](demo2.png)
+![](demo3.png)
     
 # 如何安装
 
