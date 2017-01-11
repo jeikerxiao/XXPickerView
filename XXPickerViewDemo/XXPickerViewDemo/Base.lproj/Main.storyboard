@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXt-Xx-HA9">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mut-2H-Dad"/>
+                                </constraints>
+                                <state key="normal" title="1列选择器"/>
+                                <connections>
+                                    <action selector="onePickerViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0a-eW-RlS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tU-OD-tRj">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bt8-qX-0i7"/>
+                                </constraints>
+                                <state key="normal" title="2列选择器"/>
+                                <connections>
+                                    <action selector="twoPickerViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8B-GT-nba"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvN-Sm-E0Z">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ad8-US-OvL"/>
+                                </constraints>
+                                <state key="normal" title="3列选择器"/>
+                                <connections>
+                                    <action selector="threePickerViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QfI-bG-FFJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0b-md-wHl">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gf2-i4-OIe"/>
+                                </constraints>
+                                <state key="normal" title="范围选择器"/>
+                                <connections>
+                                    <action selector="rangeSelectClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqv-hR-jDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8I1-IQ-2bS">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IFS-lb-QS8"/>
+                                </constraints>
+                                <state key="normal" title="日期选择器"/>
+                                <connections>
+                                    <action selector="datePickerViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crv-Ow-dQ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKd-Tx-gE5">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fn9-vo-HO3"/>
+                                </constraints>
+                                <state key="normal" title="日期/时间选择器"/>
+                                <connections>
+                                    <action selector="dateTimePickerViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ho-vh-FJJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jB-Pz-g5o">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bPn-mQ-XRr"/>
+                                </constraints>
+                                <state key="normal" title="时间选择器"/>
+                                <connections>
+                                    <action selector="timePickerViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Smr-1B-fpA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSN-NB-BMB">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="v5p-xJ-Huh"/>
+                                </constraints>
+                                <state key="normal" title="宽度范围选择器"/>
+                                <connections>
+                                    <action selector="threePickerViewWithWidths:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qjc-P4-Qlf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zKd-Tx-gE5" secondAttribute="trailing" id="7CE-gE-31H"/>
+                            <constraint firstItem="rSN-NB-BMB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7g4-GY-2xX"/>
+                            <constraint firstItem="7tU-OD-tRj" firstAttribute="top" secondItem="QXt-Xx-HA9" secondAttribute="bottom" constant="10" id="BPC-fd-JgF"/>
+                            <constraint firstItem="4jB-Pz-g5o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CtQ-mi-Pvq"/>
+                            <constraint firstItem="7tU-OD-tRj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FNR-Bv-3Lc"/>
+                            <constraint firstItem="zKd-Tx-gE5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JIX-pZ-z7b"/>
+                            <constraint firstItem="zKd-Tx-gE5" firstAttribute="top" secondItem="8I1-IQ-2bS" secondAttribute="bottom" constant="10" id="JeH-Sv-ZM3"/>
+                            <constraint firstItem="8I1-IQ-2bS" firstAttribute="top" secondItem="rSN-NB-BMB" secondAttribute="bottom" constant="40" id="KSb-PO-Xyc"/>
+                            <constraint firstAttribute="trailing" secondItem="4jB-Pz-g5o" secondAttribute="trailing" id="N2J-r4-sk4"/>
+                            <constraint firstItem="TvN-Sm-E0Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tl8-lH-JM0"/>
+                            <constraint firstAttribute="trailing" secondItem="7tU-OD-tRj" secondAttribute="trailing" id="UDF-Mo-biB"/>
+                            <constraint firstItem="4jB-Pz-g5o" firstAttribute="top" secondItem="zKd-Tx-gE5" secondAttribute="bottom" constant="10" id="YhU-f4-bUh"/>
+                            <constraint firstItem="QXt-Xx-HA9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZXd-9I-gmV"/>
+                            <constraint firstAttribute="trailing" secondItem="8I1-IQ-2bS" secondAttribute="trailing" id="aSS-W0-Bu8"/>
+                            <constraint firstAttribute="trailing" secondItem="QXt-Xx-HA9" secondAttribute="trailing" id="czD-VP-lZc"/>
+                            <constraint firstAttribute="trailing" secondItem="v0b-md-wHl" secondAttribute="trailing" id="dmV-Ac-Lfd"/>
+                            <constraint firstItem="QXt-Xx-HA9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="eIt-pK-6Ks"/>
+                            <constraint firstItem="8I1-IQ-2bS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fF6-cY-aVb"/>
+                            <constraint firstItem="rSN-NB-BMB" firstAttribute="top" secondItem="v0b-md-wHl" secondAttribute="bottom" constant="10" id="mws-iI-Cua"/>
+                            <constraint firstAttribute="trailing" secondItem="TvN-Sm-E0Z" secondAttribute="trailing" id="oZh-c7-p3x"/>
+                            <constraint firstItem="v0b-md-wHl" firstAttribute="top" secondItem="TvN-Sm-E0Z" secondAttribute="bottom" constant="10" id="pB8-PJ-deJ"/>
+                            <constraint firstItem="v0b-md-wHl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sYp-Qp-alc"/>
+                            <constraint firstItem="TvN-Sm-E0Z" firstAttribute="top" secondItem="7tU-OD-tRj" secondAttribute="bottom" constant="10" id="vQs-TJ-Ei7"/>
+                            <constraint firstAttribute="trailing" secondItem="rSN-NB-BMB" secondAttribute="trailing" id="zdk-Aj-rTo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDate" destination="8I1-IQ-2bS" id="nzo-v2-DWA"/>
+                        <outlet property="buttonDateTime" destination="zKd-Tx-gE5" id="o1b-Ms-U5h"/>
+                        <outlet property="buttonDouble" destination="7tU-OD-tRj" id="WR1-oJ-3K6"/>
+                        <outlet property="buttonRange" destination="v0b-md-wHl" id="yH1-xN-ZRJ"/>
+                        <outlet property="buttonSingle" destination="QXt-Xx-HA9" id="ah1-ic-Dq2"/>
+                        <outlet property="buttonTime" destination="4jB-Pz-g5o" id="6y6-Hs-gaq"/>
+                        <outlet property="buttonTriple" destination="TvN-Sm-E0Z" id="Iuw-0n-y5N"/>
+                        <outlet property="buttonTripleSize" destination="rSN-NB-BMB" id="fJR-sq-WWh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
